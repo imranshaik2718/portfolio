@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import Contactimg from "../assets/images/contact image.svg";
-
+// import Contactimg from "../assets/images/contact image.svg";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 function Contact() {
   const [state, handleSubmit] = useForm("mgvkajzy");
 
@@ -12,16 +12,15 @@ function Contact() {
       </h2>
 
 
-      <section className="bg-gradient-to-br text-white flex flex-col md:flex-row items-center justify-center px-4 py-10 gap-10">
+      <section className="bg-gradient-to-br text-white flex items-center justify-center py-10 ">
+  <DotLottieReact
+      src="https://lottie.host/ec150cda-0fc0-4281-8e93-b64ef7360e84/gpkX8Saihx.lottie"
+      loop
+      autoplay
+    />
+       
 
-        <img
-          src={Contactimg}
-          className="w-full max-w-md h-auto object-contain"
-          alt="Contact"
-        />
-
-
-        <div className="w-full max-w-3xl p-6 sm:p-10 md:p-14">
+        <div className="w-full max-w-3xl  md:p-14">
           <form onSubmit={handleSubmit} className="space-y-8">
             <div>
               <label
@@ -95,7 +94,7 @@ function Contact() {
             <button
               type="submit"
               disabled={state.submitting}
-              className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition duration-200 disabled:opacity-50"
+              className=" py-3 px-10 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition duration-200 disabled:opacity-50"
             >
               Send Message
             </button>

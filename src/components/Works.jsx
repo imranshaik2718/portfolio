@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../assets/images/LW1.svg";
+import image1 from "../assets/images/latestwork1 1.png";
 import image2 from "../assets/images/project2.png";
-
+import image3 from  "../assets/images/p3.png";
 export default function Works() {
   return (
     <div className="from-gray-900 to-black">
@@ -13,24 +13,24 @@ export default function Works() {
      
 
       {/* Vertical line */}
-      <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 h-full w-[3px] bg-[#E0E0E0] z-0" />
+      <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 h-[200vh] w-[3px] bg-[#E0E0E0] " />
 
       {/* Projects */}
-      <div className="relative z-10 flex flex-col items-center gap-40">
-        {/* Top Project (Left) */}
+      <div className="relative z-10 flex flex-col items-center gap-30">
+        {/*1st */}
         <div className="flex justify-center items-center w-full max-w-6xl relative ">
           {/* Image */}
           <div className="w-1/2 flex justify-start">
-            <img src={image1} alt="Harigurus" className="w-[450px] hover:scale-105 z-10  duration-300 shadow-2xl" />
+            <a href="https://todo-app-2718.netlify.app/" className="z-10" target="_blank"><img src={image1} alt="Harigurus" className="w-[400px] hover:scale-110  duration-500 shadow-2xl" /></a>
           </div>
 
           {/* Connector Line */}
-          <div className="absolute left-1/3.2 top-1/2 transform -translate-y-1/2 -translate-x-1/2 overflow-hidden h-[3px] w-[calc(50%-400px)] bg-[#6C2BD9]" />
+          <div className="absolute left-1/3.2 top-1/2 transform -translate-y-1/2 -translate-x-1/2 overflow-hidden h-[3px] w-[calc(50%-300px)] bg-[#0d6efd]" />
 
           {/* Content */}
           <div className="w-1/2 pl-20 ">
-            <h3 className="text-3xl font-bold text-[#6C2BD9]">TaskMate</h3>
-            <p className="text-[#6C2BD9] italic mt-1">(React To-Do App Live)</p>
+            <h3 className="text-3xl font-bold text-[#0d6efd]">TaskMate</h3>
+            <p className="text-[#0d6efd] italic mt-1">(React To-Do App Live)</p>
             <p className="mt-4 text-gray-400">
              TaskMate is a responsive task management web
             application built using React.js. It allows users to add, edit,
@@ -45,7 +45,7 @@ export default function Works() {
           </div>
         </div>
 
-        {/* Bottom Project (Right) */}
+        {/* 2nd */}
         <div className="flex justify-center items-center w-full max-w-6xl relative">
           {/* Content */}
           <div className="w-1/2 pr-20 text-right">
@@ -62,14 +62,47 @@ export default function Works() {
           </div>
 
           {/* Connector Line */}
-         <div className="absolute left-1/2 top-1/2 -translate-y-1/2 h-[3px] w-[calc(50%-400px)] bg-[#912046]" />
+         <div className="absolute left-1/2 top-1/2 -translate-y-1/2 h-[3px] w-[calc(50%-300px)] bg-[#912046]" />
 
 
           {/* Image */}
           <div className="w-1/2 flex justify-end">
-            <img src={image2} alt="EazyGrad" className="w-[450px] shadow-2xl hover:scale-105 z-10  duration-300" />
+            <a href="https://sksplumbingworks.netlify.app/" className="z-10" target="_blank"><img src={image2} alt="EazyGrad" className="w-[400px]  hover:scale-110  duration-500" /></a>
           </div>
         </div>
+
+  
+    {/* 3rd */}
+              
+<div className="flex justify-center items-center w-full max-w-6xl relative ">
+          {/* Image */}
+          <div className="w-1/2 flex justify-start">
+            <a href="https://deepranjansachan-drs.netlify.app/" className="z-10" target="_blank"><img src={image3} alt="Harigurus" className="w-[400px] hover:scale-110 z-10 duration-500 shadow-2xl" /></a>
+          </div>
+
+          {/* Connector Line */}
+          <div className="absolute left-1/3.2 top-1/2 transform -translate-y-1/2 -translate-x-1/2 overflow-hidden h-[3px] w-[calc(50%-300px)] bg-[#2d7e3f]" />
+
+          {/* Content */}
+          <div className="w-1/2 pl-20 ">
+            <h3 className="text-3xl font-bold text-[#2d7e3f]">TaskMate</h3>
+            <p className="text-[#2d7e3f] italic mt-1">(React To-Do App Live)</p>
+            <p className="mt-4 text-gray-400">
+             TaskMate is a responsive task management web
+            application built using React.js. It allows users to add, edit,
+            delete, and mark tasks as completed. Tasks are stored using
+            localStorage
+            </p>
+            <div className="flex flex-wrap gap-2 mt-4">
+              {['#react.js', '#JavaScript', '#html', '#css', '#LocalStorage', '#LocalStorage' , '#Netlify (Deployment)'].map(tag => (
+                <span key={tag} className="bg-gray-200 px-3 py-1 rounded-full text-sm">{tag}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
     </div>
 
