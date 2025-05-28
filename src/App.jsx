@@ -1,23 +1,24 @@
-import React, { useState } from "react";
-import NavBar from "./components/NavBar";
-// import Hero from "./components/hero";
-import Works from './components/Works';
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './components/HomePage';
 import "./App.css";
-import VantaBackground from "./components/VantaBackground";
-// import { color } from 'three/tsl';
-
+import Login from './components/Login/Login';
+import Register from "./components/Login/Register"
 function App() {
   return (
-    <>
-    <div className="body flex flex-col justify-between h-screen">
-      <div className=" text-white">
-        <NavBar />
-        {/* <Hero /> */}
-        <VantaBackground />
-      </div>
-    </div>
-    <Works/>
+    <div>
+      <>
+    <Router>
+      <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/success" element={<HomePage/>} />
+      </Routes>
+    </Router>
     </>
-  );
+    </div>
+  )
 }
-export default App;
+
+export default App

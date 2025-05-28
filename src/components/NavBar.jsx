@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Ali from "../assets/images/ALLLLi.png";
 import Whatsapp from "../assets/images/whatsapp.svg";
+import Login from "../assets/images/icons8-login-96.png";
 import PopModel from "./PopModel";
 const NavBar = ({ lightBtn, Page }) => {
   const [showModal, setshowModel] = useState(false);
@@ -36,7 +37,7 @@ const NavBar = ({ lightBtn, Page }) => {
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="feather feather-sun"
+                class="feather feather-sun cursor-pointer"
                 onClick={lightBtn}
                
               >
@@ -60,24 +61,11 @@ const NavBar = ({ lightBtn, Page }) => {
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="feather feather-moon"
+                class="feather feather-moon cursor-pointer"
               >
                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
               </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="full"
-                stroke="#fff"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-phone"
-              >
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-              </svg>
+              <a href="/Login"><img src={Login} className="w-6 " fill="full" alt="loginicon" /></a>
               <a href=" https://wa.me/qr/AGMRN46C6JIBM1">
                 <img
                   src={Whatsapp}
@@ -452,7 +440,7 @@ const NavBar = ({ lightBtn, Page }) => {
           </div>
         </div>
         <button className=" bg-blue-800 border-2 rounded-lg border-blue-900 py-2 px-4 hover:bg-blue-500 hover:scale-110 duration-100 ease-in-out self-center mb-12 group">
-          Latest works
+         <a href="#Latest">Latest works</a> 
           <svg
             fill="currentColor"
             stroke="currentColor"
