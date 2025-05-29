@@ -171,7 +171,7 @@ const NavBar = ({ lightBtn, Page }) => {
               <div className="flex flex-col group ">
                 <li className="w-8 icon hover:text-white ">
                   <a
-                    href="https://drive.google.com/file/d/11ab84q2Rdhwxp2ASPbIsaN2R_rY8epU3/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1sSOwgXiRVc-RKRfehpDHSw4FqbC4vr7a/view?usp=sharing"
                     target="_blank"
                   >
                     <svg
