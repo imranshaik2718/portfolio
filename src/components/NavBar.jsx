@@ -440,7 +440,7 @@ const NavBar = ({ lightBtn, Page }) => {
           </div>
         </div>
         <button className=" bg-blue-800 border-2 rounded-lg border-blue-900 py-2 px-4 hover:bg-blue-500 hover:scale-110 duration-100 ease-in-out self-center mb-12 group">
-         <a href="#Latest">Latest works</a> 
+         <a href="/Latest">Latest works</a> 
           <svg
             fill="currentColor"
             stroke="currentColor"

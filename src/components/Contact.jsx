@@ -7,7 +7,7 @@ function Contact() {
 
   return (
     <>
-      <h2 className="text-4xl font-bold text-white text-center tracking-tight pt-16 mt-15">
+      <h2 className="text-4xl font-bold text-white text-center tracking-tight pt-3 ">
         Let's Connect
       </h2>
 
