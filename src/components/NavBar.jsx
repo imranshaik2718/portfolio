@@ -3,7 +3,7 @@ import Ali from "../assets/images/ALLLLi.png";
 import Whatsapp from "../assets/images/whatsapp.svg";
 import Login from "../assets/images/icons8-login-96.png";
 import PopModel from "./PopModel";
-const NavBar = ({ lightBtn, Page }) => {
+const NavBar = ({ lightBtn }) => {
   const [showModal, setshowModel] = useState(false);
   return (
     <>  
@@ -171,7 +171,7 @@ const NavBar = ({ lightBtn, Page }) => {
               <div className="flex flex-col group ">
                 <li className="w-8 icon hover:text-white ">
                   <a
-                    href="https://drive.google.com/file/d/1sSOwgXiRVc-RKRfehpDHSw4FqbC4vr7a/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1oDAXN2pyc8FKeDGD93XSrpMmgbRZguoX/view?usp=sharing"
                     target="_blank"
                   >
                     <svg
